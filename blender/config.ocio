@@ -29,6 +29,10 @@ roles:
   color_picking: Raw
   texture_paint: Raw
 
+  # Log spaces
+  color_timing: lg10
+  compositing_log: lgf
+
 displays:
   sRGB:
     - !<View> {name: Default, colorspace: sRGB}
@@ -219,6 +223,18 @@ colorspaces:
     to_reference: !<GroupTransform>
       children:
         - !<FileTransform> {src: lg10.spi1d, interpolation: nearest}
+
+  - !<ColorSpace>
+    name: lgf
+    family: lg
+    equalitygroup: 
+    bitdepth: 32f
+    description: |
+      lgf : conversion from film log
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.25, 1.5]
+    to_reference: !<FileTransform> {src: lgf.spi1d, interpolation: linear}
 
   - !<ColorSpace>
     name: srgb8

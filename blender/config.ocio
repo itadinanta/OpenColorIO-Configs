@@ -276,6 +276,150 @@ colorspaces:
         - !<FileTransform> {src: vd16.spi1d, interpolation: nearest}
 
   - !<ColorSpace>
+    name: Cineon
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Cineon (Log Film Scan)
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: cineon.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: Panalog
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Sony/Panavision Genesis Log Space
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: panalog.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: REDLog
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      RED Log Space
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: redlog.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: ViperLog
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Viper Log Space
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: viperlog.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: AlexaV3LogC
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Alexa Log C
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: alexalogc.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: PLogLin
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Josh Pines style pivoted log/lin conversion. 445->0.18
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: ploglin.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: SLog
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Sony SLog
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: slog.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: SLog1
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Sony SLog1
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: slog1.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: SLog2
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Sony SLog2
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: slog2.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: SLog3
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Sony SLog3
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: slog3.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: CLog
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      Canon CLog
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.0684932, 1.08676]
+    to_reference: !<FileTransform> {src: clog.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
+    name: Protune
+    family: ""
+    equalitygroup: ""
+    bitdepth: 32f
+    description: |
+      GoPro Protune
+    isdata: false
+    allocation: uniform
+    allocationvars: [-0.125, 1.125]
+    to_reference: !<FileTransform> {src: protune.spi1d, interpolation: linear}
+
+  - !<ColorSpace>
     name: Non-Color
     family: raw
     description: |

@@ -63,7 +63,7 @@ active_views: [Default, RRT, Raw, Log]
 colorspaces:
   - !<ColorSpace>
     name: Linear
-    family: aces
+    family: ""
     equalitygroup:
     bitdepth: 32f
     description: |
@@ -74,7 +74,7 @@ colorspaces:
 
   - !<ColorSpace>
     name: Raw
-    family: raw
+    family: ""
     equalitygroup:
     bitdepth: 32f
     isdata: true
@@ -83,7 +83,7 @@ colorspaces:
 
   - !<ColorSpace>
     name: adx10
-    family: display
+    family: ""
     equalitygroup:
     bitdepth: 10ui
     description: |
@@ -226,7 +226,7 @@ colorspaces:
 
   - !<ColorSpace>
     name: lgf
-    family: lg
+    family: ""
     equalitygroup: 
     bitdepth: 32f
     description: |
@@ -264,7 +264,7 @@ colorspaces:
 
   - !<ColorSpace>
     name: VD16
-    family: vd
+    family: ""
     equalitygroup:
     bitdepth: 16ui
     description: |
@@ -421,7 +421,7 @@ colorspaces:
 
   - !<ColorSpace>
     name: Non-Color
-    family: raw
+    family: ""
     description: |
         Color space used for images which contains non-color data (i,e, normal maps)
     equalitygroup:

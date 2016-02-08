@@ -14,7 +14,6 @@ roles:
   reference: linear
   scene_linear: linear
   texture_paint: sRGB
-  viewer: sRGB
 
 displays:
   default:
